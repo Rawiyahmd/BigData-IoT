@@ -1,8 +1,9 @@
+import time
 import json
 import os
 from kafka import KafkaProducer
 
-DRY_RUN = True
+DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
 TOPIC = "medical_sensors"
 
 if not DRY_RUN:
@@ -25,6 +26,7 @@ with open("medical_data.jsonl", "r") as file:
             producer.send(TOPIC, value=data).get(timeout=10)
 
         count += 1
+        time.sleep(1)
 
 if not DRY_RUN:
     producer.close()
