@@ -3,7 +3,7 @@ import os
 from kafka import KafkaProducer
 
 DRY_RUN = True
-TOPIC = "iot_sensors"
+TOPIC = "medical_sensors"
 
 if not DRY_RUN:
     producer = KafkaProducer(
@@ -15,12 +15,12 @@ if not DRY_RUN:
 
 count = 0
 
-with open("sensor_data.jsonl", "r") as file:
+with open("medical_data.jsonl", "r") as file:
     for line in file:
         data = json.loads(line)
 
         if DRY_RUN:
-            print("Ready to send:", data["sensor_id"])
+            print("Ready to send:", data["patient_id"])
         else:
             producer.send(TOPIC, value=data).get(timeout=10)
 
