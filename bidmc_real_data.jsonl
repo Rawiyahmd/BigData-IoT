@@ -1,0 +1,5 @@
+{"record_id": "BIDMC_01_0", "patient_id": "BIDMC_01", "heart_rate": 94, "pulse_rate": 93, "respiratory_rate": 25, "spo2": 97, "time_seconds": 0, "event_time": "2026-11-21T14:10:20.407380+00:00", "source": "BIDMC_recorded_data"}
+{"record_id": "BIDMC_01_1", "patient_id": "BIDMC_01", "heart_rate": 94, "pulse_rate": 93, "respiratory_rate": 25, "spo2": 97, "time_seconds": 1, "event_time": "2026-11-21T14:10:20.407658+00:00", "source": "BIDMC_recorded_data"}
+{"record_id": "BIDMC_01_2", "patient_id": "BIDMC_01", "heart_rate": 94, "pulse_rate": 93, "respiratory_rate": 25, "spo2": 97, "time_seconds": 2, "event_time": "2026-11-21T14:10:20.407902+00:00", "source": "BIDMC_recorded_data"}
+{"record_id": "BIDMC_01_3", "patient_id": "BIDMC_01", "heart_rate": 92, "pulse_rate": 93, "respiratory_rate": 26, "spo2": 97, "time_seconds": 3, "event_time": "2026-11-21T14:10:20.408104+00:00", "source": "BIDMC_recorded_data"}
+{"record_id": "BIDMC_01_4", "patient_id": "BIDMC_01", "heart_rate": 93, "pulse_rate": 93, "respiratory_rate": 26, "spo2": 97, "time_seconds": 4, "event_time": "2026-11-21T14:10:20.408423+00:00", "source": "BIDMC_recorded_data"}

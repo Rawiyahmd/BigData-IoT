@@ -1,6 +1,7 @@
-import time
+
 import json
 import os
+import time
 from kafka import KafkaProducer
 
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
@@ -16,7 +17,7 @@ if not DRY_RUN:
 
 count = 0
 
-with open("medical_data.jsonl", "r") as file:
+with open("bidmc_real_data.jsonl", "r") as file:
     for line in file:
         data = json.loads(line)
 
