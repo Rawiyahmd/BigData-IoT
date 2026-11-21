@@ -44,3 +44,33 @@ Les tests locaux sont réussis.
 La transmission réelle reste à valider.
 
 Toutes les données sont synthétiques.
+
+## Source de données réelles — BIDMC
+
+Source : BIDMC PPG and Respiration Dataset (PhysioNet)
+
+Fichiers :
+- bidmc_01_DATA.csv : mesures médicales enregistrées
+- read_real_data.py : conversion et nettoyage
+- bidmc_real_data.jsonl : données prêtes pour le Producer
+
+Résultats :
+- 481 lignes analysées
+- 468 enregistrements conservés
+- 13 lignes incomplètes exclues
+- 468 enregistrements traités en mode Dry Run
+
+Commandes de test :
+
+python read_real_data.py
+python producer.py
+
+Remarque :
+Les données proviennent d'enregistrements historiques de
+capteurs médicaux réels.
+
+Leur lecture progressive reproduit un flux de données,
+mais ne constitue pas une acquisition en direct.
+
+La transmission vers un Kafka Broker et l'intégration de
+capteurs physiques restent à valider.
